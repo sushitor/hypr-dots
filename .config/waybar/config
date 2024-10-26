@@ -4,45 +4,30 @@
 
     "modules-left": ["hyprland/workspaces","hyprland/window"],
     "modules-center": [],
-    "modules-right": ["idle_inhibitor", "clock", "network", "battery", "pulseaudio","tray"],
+    "modules-right": ["idle_inhibitor", "clock", "network", "battery", "pulseaudio","backlight","tray"],
 
-    "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "format": "{icon}",
-         "format-icons": {
-             "1": "Ⅰ",
-             "2": "Ⅱ",
-             "3": "Ⅲ",
-             "4": "Ⅳ",
-             "5": "Ⅴ",
-             "6": "Ⅵ",
-             "7": "Ⅶ",
-             "8": "Ⅷ",
-             "9": "Ⅸ",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
-     },
-
-    "hyprland/window": {
-        "format": "{}",
-        "max-length": 150
-      },
-
-    "idle_inhibitor": {
-      "format": "<span>{icon}  </span>",
-      "format-icons": {
-        "activated": "",
-        "deactivated": ""
-      },
-
-    "on-click-right": "swaylock -eFfki ~/.config/lockscreen-origin.png"
+	"hyprland/window": {
+    	"format": "{}",
+    	"max-length": 150
   },
+
+	"idle_inhibitor": {
+		"format": "<span>{icon}  </span>",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		},
+
+		"on-click-right": "swaylock -eFfki ~/.config/lockscreen-origin.png"
+	},
     "clock": {
         "format": "{:%a, %d. %b  %H:%M}",
         "tooltip": false
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
 
     "network": {
