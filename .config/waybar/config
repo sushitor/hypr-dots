@@ -40,7 +40,8 @@
     },
     "clock": {
         "format": "{:%H:%M }",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip": false
     },
     "cpu": {
         "format": "{usage}% ",
@@ -60,7 +61,8 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% ",
-        "format-icons": ["", ""]
+        "format-icons": ["", ""],
+        "tooltip": false
     },
     "battery": {
         "states": {
